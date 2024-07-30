@@ -17,3 +17,7 @@ This project is a simple Amazon clone created using HTML and CSS. It aims to rep
 - HTML5
 - CSS3
 
+##Preview
+
+https://github.com/user-attachments/assets/4228119e-6176-4284-98d4-d8e9979394bd
+
