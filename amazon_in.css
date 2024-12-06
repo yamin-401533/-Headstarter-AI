@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+
+.navbar{
+    height: 85px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 70px;
+    width: 140px;
+}
+.logo{
+    background-image: url("image/Amazon-Logo-Font-1-scaled.webp");
+    height: 70px;
+    width: 100%;
+    background-size: cover;
+
+}
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid orange;
+}
+
+.a_1{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.a_2{
+    font-size: 1rem;
+    margin-left: 3.2px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-add:hover{
+    border: 2px solid orange;
+}
+
+/*box-3*/
+.nav-s{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 133, 46);
+    width: 1000px;
+    height: 40px;
+    border-radius: 7px;
+}
+.nav-s:active{
+    border: 2px solid orange;
+}
+.s-select{
+    background-color: #f3f3f3;
+    width: 80px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: none;
+}
+.input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.s-icon{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+/*box 4*/
+
+span{
+    font-size: 0.7rem;
+}
+.second{
+    font-size: 0.85rem;
+    font-weight: 700px;
+}
+
+.nave-cart i {
+    font-size: 30px;
+    color: rgb(255, 133, 20);
+}
+
+.nave-cart{
+    font-size: 0.8rem;
+    font-weight: 700px;
+}
+
+/**panel**/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    color: beige;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+    margin-left: 10px;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.hero-sec {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-sec .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(11, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 15s ease-in-out infinite alternate;
+}
+
+.hero-sec .slider-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#slider-image-1 { background-image: url("image/cover_3.jpg"); }
+#slider-image-2 { background-image: url("image/cover_9.jpg"); }
+#slider-image-3 { background-image: url("image/c.jpg"); }
+#slider-image-4 { background-image: url("image/cover_5.jpg"); }
+#slider-image-5 { background-image: url("image/cover_7.jpg"); }
+#slider-image-6 { background-image: url("image/cover_4.jpg"); }
+#slider-image-7 { background-image: url("image/c_2.jpg"); }
+#slider-image-8 { background-image: url("image/c_4.jpg"); }
+#slider-image-9 { background-image: url("image/c_3.jpg"); }
+#slider-image-10 { background-image: url("image/amazon_c_2.jpg"); }
+#slider-image-11 { background-image: url("image/amazon_c.jpg"); }
+
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    5% { transform: translateX(0%); }
+    10% { transform: translateX(-100%); }
+    15% { transform: translateX(-100%); }
+    20% { transform: translateX(-200%); }
+    25% { transform: translateX(-200%); }
+    30% { transform: translateX(-300%); }
+    35% { transform: translateX(-300%); }
+    40% { transform: translateX(-400%); }
+    45% { transform: translateX(-400%); }
+    50% { transform: translateX(-500%); }
+    55% { transform: translateX(-500%); }
+    60% { transform: translateX(-600%); }
+    64% { transform: translateX(-600%); }
+    69% { transform: translateX(-700%); }
+    74% { transform: translateX(-700%); }
+    79% { transform: translateX(-800%); }
+    83% { transform: translateX(-800%); }
+    87% { transform: translateX(-900%); }
+    91% { transform: translateX(-900%); }
+    96% { transform: translateX(-1000%); }
+    100% { transform: translateX(-1000%); }
+}
+
+.hero-msg {
+    background-color: var(--glass_border); /* Semi-transparent background */
+    backdrop-filter:blur(85px);
+    box-shadow:0px 3px 2.5px rgba(255, 123, 0,0.8);
+    color: #000000;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: absolute; /* Positioning it absolutely */
+    top: 500px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it is above the slider images */
+}
+
+.hero-msg a {
+    color: #0f7185;
+}
+.hero-msg button {
+    background-color: #0888a1;
+    width: 80px;
+    height: 30px;
+}
+
+
+/*shop-section*/
+.box {
+    border: 2px solid rgb(255, 105, 35);
+    height: 400px;
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    position: absolute; /* Positioning it absolutely */
+    bottom: 15px; /* Adjust as needed */
+    z-index: 1; /* Ensure it is above the slider images */
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(255, 96, 39);
+}
+
+.box1 { left: 5%; }
+.box2 { left: 24%; }
+.box3 { left: 42.6%; }
+.box4 { left: 61.3%; }
+.box5 { left: 80%; }
+
+
+.shopsec {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative; /* Ensure it is positioned relative to the hero section */
+}
+ .s{
+    background-color: #ffc72d;
+    width: 100%;
+    height: 100%;
+    animation: colorAnimation 15s  ease-in-out infinite;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+@keyframes colorAnimation {
+
+    0% { background-color: #355070; }
+    10% { background-color: #00687a; }
+    20% { background-color: #4e6685; }
+    30% { background-color: #ffe865; }
+    40% { background-color: #ffb951; }
+    50% { background-color: #F7AF9D; }
+    60% { background-color: #B56576; }
+    70% { background-color: #C08497; }
+    80% { background-color: #E56B6F; }
+    90% { background-color: #6D597A; }
+    100% { background-color: #355070; }
+    
+}
+.c{
+    height: 350px;
+    width: 13%;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgb(255, 136, 0);
+    padding: 40px 40px 40px 40px;
+    margin: 30px 30px 30px 30px;
+}
+
+footer {
+    background-color: #0f1111;
+    color: beige;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
